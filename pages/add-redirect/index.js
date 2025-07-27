@@ -1,13 +1,7 @@
-import ResponsiveAppBar from "@/components/appbar";
 import { Box, CircularProgress, TextField } from "@mui/material";
 import { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import axios from "axios";
-import VideoPreview from "@/components/videoPreview/preview";
 
 export default function GetVideoCode() {
 
