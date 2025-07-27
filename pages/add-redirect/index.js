@@ -30,7 +30,7 @@ export default function GetVideoCode() {
         }).then((res)=>{
             if(res.status == 200){
                 if (res.data.code == 200) {
-                    setUrl(res.data.url)
+                    setUrl(res.data.url.replace('msn-backend.essentiallysports.com', 'siddhantsingh.in'))
                     setLoading(false)
                 }
             }
