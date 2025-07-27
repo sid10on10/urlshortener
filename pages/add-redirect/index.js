@@ -13,15 +13,6 @@ export default function GetVideoCode() {
   const [error, setError] = useState(false)
   const [errorMessage, setErrorMessage] = useState('')
 
-  useEffect(()=>{
-    let token = localStorage.getItem('token')
-    if(token){
-      setToken(token)
-    }else{
-      window.location.replace('/login')
-    }
-  }, [])
-
   function getData() {
     setError(false)
     setErrorMessage("")
